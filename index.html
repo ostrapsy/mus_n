@@ -118,7 +118,7 @@ You can edit the instructions text for entering demo below.
 */ 
 -->
 	<h3>Please enter some more info about yourself</h3>
-	This information will be visible to the other participants<br>
+	This information will be visible to the other participants<br><br>
 	<b>Age:</b>  <input type="text" size="3" maxlength="3" style="vertical-align: middle; margin: 0px; width: 50px;" id="age"  autocomplete="off" /><br><br>
 	<b>Gender:</b><br>
 	<form action="" id=genderForm>
@@ -131,13 +131,20 @@ You can edit the instructions text for entering demo below.
 	</form>
 	<b>Religion:</b><br>
 	<form action="" id=religionForm>
- 	 <label for="christian"><input type="radio" style="vertical-align: middle; margin: 0px;" name="religion" value="Christian">   Christian</label>
- 	 	<label for="judaism"><input type="radio" style="vertical-align: middle; margin: 0px;" name="religion" value="Jewish">   Jewish</label>
- 	 		<label for="islam"><input type="radio" style="vertical-align: middle; margin: 0px;" name="religion" value="Muslim">   Muslim</label>
-				<label for="hindu"><input type="radio" style="vertical-align: middle; margin: 0px;" name="religion" value="Hindu">   Hindu</label>
-					<label for="buddhism"><input type="radio" style="vertical-align: middle; margin: 0px;" name="religion" value="Buddhist">   Buddhist</label>
-						<label for="athesist"><input type="radio" style="vertical-align: middle; margin: 0px;" name="religion" value="Atheist">   Atheist</label>
-							<label for="other"><input type="radio" style="vertical-align: middle; margin: 0px;" name="religion" value="Other">   Other</label>
+		<input type="radio" id="christian" name="religion" value="Christian">
+ 	 		<label for="christian">Christian</label>
+		<input type="radio" id="judaism" name="religion" value="Jewish">
+ 	 		<label for="judaism">Jewish</label>
+		<input type="radio" id="islam" name="religion" value="Muslim">
+ 	 		<label for="islam">Muslim</label>
+		<input type="radio" id="hindu" name="religion" value="Hindu">
+			<label for="hindu">Hindu</label>
+		<input type="radio" id="buddhism" name="religion" value="Buddhist">
+			<label for="buddhism">Buddhist</label>
+		<input type="radio" id="atheist" name="religion" value="Atheist">
+			<label for="athesist">Atheist</label>
+		<input type="radio" id="other" name="religion" value="Other">
+			<label for="other">Other</label>
 	</form><br>
 	
 	<button type="submit"  id="submit_demo">Submit</button>
