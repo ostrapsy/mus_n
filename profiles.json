@@ -13,7 +13,7 @@ window.others = {
         "likes": [45000, 50000, 150000] //4
       },
       {
-        "avatar": "avatars/others/sarah.png",
+        "avatar": "avatars/others/zan.png",
         "username": "Salar",
 	"userage": "64",
 	"usergender": "Female",
