@@ -86,7 +86,7 @@ window.others = {
       },
       {
         "avatar": "avatars/others/salar.png",
-        "username": "Heather",
+        "username": "Aaleyah",
 	"userage": "21",
 	"usergender": "Female",
 	"userreligion": "Muslim",
@@ -97,7 +97,7 @@ window.others = {
         "avatar": "avatars/others/jane.png",
         "username": "Jane",
 	"userage": "56",
-	"usergender": "Feale",
+	"usergender": "Female",
 	"userreligion": "Muslim",
         "text": "Dear all, my name is Jane and I will soon have an important interview. This is all I can think about these days. I hope youre doing well. Oh and for a group- I would say- my Ladies Quran group",
         "likes": [10000, 15000, 24000, 50000] //6
