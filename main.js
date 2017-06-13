@@ -99,7 +99,7 @@ $(function() {
 			$('#words').hide();
 			//window.username = $('#username').val();
 			window.words = word1 + " " + word2 + " " + word3 + " " + word4 + " " + word5;
-			location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&r='+window.religion+'&d='+encodeURI(window.description)+'&w='window.words;
+			location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&r='+window.religion+'&d='+encodeURI(window.description)+'&w='+window.words;
   			  			
   		} else {
   			alertify.log(errormsg,"error");
