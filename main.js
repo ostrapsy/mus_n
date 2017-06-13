@@ -69,7 +69,45 @@ $(function() {
   			init_name();  			
   	});	
   }
-  
+	
+  function init_words() {
+
+  	$('#words').show();
+
+    
+  	$('#submit_words').on('click',function() {
+		$(window).unbind('beforeunload');
+  		var error = 0;
+		
+		var word1 = $('#word1').val();
+		var word2 = $('#word2').val();
+		var word3 = $('#word3').val();
+		var word4 = $('#word4').val();
+		var word5 = $('#word5').val();
+		
+		if(not_alphanumeric(word1 || word2 || word3 || word4 || word5)) {
+  			error = 1;
+  			errormsg = 'Please only letters (and no spaces)';
+  		}  
+  		if(word1 == "" || word2 == "" || word3 == "" || word4 == "" || word5 == "") {
+  			error = 1;
+  			errormsg = 'Please enter a word in each box';
+  			//uname = "undefined";
+  		}		
+
+  		if(error == 0) {
+			$('#words').hide();
+			//window.username = $('#username').val();
+			window.words = word1 + " " + word2 + " " + word3 + " " + word4 + " " + word5;
+			location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&r='+window.religion+'&d='+encodeURI(window.description)+'&w='window.words;
+  			  			
+  		} else {
+  			alertify.log(errormsg,"error");
+  		}
+
+
+  	});
+  }
 
   // **Slide:** **Username**       
   // Note: Only alphanumeric usernames without spaces are accepted
@@ -373,7 +411,7 @@ $(function() {
     
     $('#final-continue').on('click', function() {
 				$('#task').hide();
-	   			//init_words();
+	   			init_words();
     });
     
     },window.settings.tasklength); // timing for task
