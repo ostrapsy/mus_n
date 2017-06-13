@@ -373,14 +373,14 @@ $(function() {
     
     $('#final-continue').on('click', function() {
 				$('#task').hide();
-	   			init_words();
+	   			//init_words();
     });
     
     },window.settings.tasklength); // timing for task
 
   }
 		
-  function init_words() {
+  /*function init_words() {
 
   	$('#words').show();
 
@@ -417,7 +417,7 @@ $(function() {
 
 
   	});
-  }
+  }*/
 
   // Get URL parameters to set condition number and participant number
   function get_params() {
