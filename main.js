@@ -298,7 +298,7 @@ $(function() {
 
     $('#task').show();
 
-	shortcut.add("Backspace",function() {});      
+	//shortcut.add("Backspace",function() {});      
 
   	jQuery("#countdown").countDown({
   		startNumber: window.settings.tasklength/1000, // in seconds
