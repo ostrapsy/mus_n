@@ -108,6 +108,29 @@ $(function() {
 
   	});
   }
+	
+	function init_profiles() {
+	  
+	  users = {
+		  "posts" : [
+			{
+			  "avatar": 'avatars/' + window.avatar + '.png',
+			  "username": window.username,
+			  "userage": window.age,
+			  "usergender": window.gender,
+			  "userpolitic": window.politic,
+			  "text": window.description,
+			  "likes": window.settings.condition_likes,
+			  "usernames": window.settings.likes_by
+			}
+		  ]
+		};
+	  $('#profiles').show();
+	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, users);
+	  $("#profiles").append(html);
+	  $(window).unbind('beforeunload');
+	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&w='+window.words;
+  }
 
   // **Slide:** **Username**       
   // Note: Only alphanumeric usernames without spaces are accepted
