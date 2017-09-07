@@ -110,6 +110,15 @@ $(function() {
   	});
   }
 	
+	function init_after_task() {
+
+	$('#after_task').show();
+  	$('#submit_after_task').on('click',function() {
+		$('#after_task').hide();
+		init_profiles();
+	});
+  }
+	
 	function init_profiles() {
 	  
 	  users = {
