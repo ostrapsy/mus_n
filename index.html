@@ -234,6 +234,30 @@ You can edit the instructions text. The prompt to try and form an impression of 
 	Click on 'Show message' to read it.<br><br>
 	<button type="submit"  id="submit_after_task">Show message</button>
 </div>
+	
+<div id="profiles" style="display:none;">
+<script type="template/text" id="newtmp">
+  {{#posts}}
+    <div class="entry1">
+    <div class="tophalf1">
+    	<img src="avatars/others/george1.png" class="avatar">
+        <h3>George</h3>
+    	
+    	<div class="main1">
+		<p><i>"A 26 year old male who's into technology and politics."</i></p>
+		<p>Hi {{username}}!</p>
+		<p>I work in IT and I am really into politics. I am a member of the British National Alliance. I would be very happy if you could spare a couple of minutes to answer my <a href="" id="link">survey.</a></p>
+    	</div>
+	
+	
+    	<br style="clear:both;">
+    </div>	
+    <div class="bottomhalf">
+        </div>
+    </div>
+  {{/posts}}  
+</script>
+</div>
 <!-- 
 /* 
   
