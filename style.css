@@ -169,7 +169,53 @@ body {
 	float: left;
 	margin: 10px;
 }
+/*
+Taget från cball
+*/
 
+div.main1 {
+  width: 670px !important;
+  margin-left: -16px;
+  margin-top: 3px;
+	margin-bottom: -10px !important;
+}
+
+
+.entry1 {
+	width: 720px;
+	float: left;
+	margin-bottom: 5px;
+	margin-top: 10;
+}
+.tophalf1 {
+	margin-bottom: 0px !important;
+    background-color: #ffffff;
+	border: 1px solid #d5d7e0;
+	padding: 15px;	
+}
+
+.tophalf1 img {
+	float: left;
+}
+
+.tophalf1 .main1 {
+	float: left;
+	width: 120px;
+	font-size: 9pt;
+	text-align: left;
+	padding-left: 15px; /* text to avatar distance */
+}
+
+.tophalf1 h3 {
+	color: #3B5999;
+  font-variant: normal;
+	font-size: 20px;
+	text-transform:capitalize;
+  margin-left: 85px;
+  padding-left: 0px;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
 
 div.main {
   width: 210px !important;
